@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eFJMtyPaDGvyQthAms9X4EZ72LBwXPjm4VRogrG+Joc=",
+  "Source": "SchedulePlanningApi",
+  "BasePath": "_content/SchedulePlanningApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
