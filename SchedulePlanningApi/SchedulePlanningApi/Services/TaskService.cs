@@ -27,7 +27,7 @@ namespace SchedulePlanningApi.Services
                     DueDate = task.DueDate,
                 };
 
-                await _context.Tasks.AddAsync(createdTask);
+                await _context.tasks.AddAsync(createdTask);
                 await _context.SaveChangesAsync();
 
                 return createdTask;
@@ -42,13 +42,13 @@ namespace SchedulePlanningApi.Services
         {
             try
             {
-                var task = await _context.Tasks.FindAsync(id);
+                var task = await _context.tasks.FindAsync(id);
                 if (task == null)
                 {
                     return false; 
                 }
 
-                _context.Tasks.Remove(task);
+                _context.tasks.Remove(task);
                 await _context.SaveChangesAsync();
                 return true; 
             }
@@ -63,7 +63,7 @@ namespace SchedulePlanningApi.Services
         {
             try
             {
-                var tasks = await _context.Tasks.ToListAsync();
+                var tasks = await _context.tasks.ToListAsync();
 
                 return tasks;
             }
@@ -79,7 +79,7 @@ namespace SchedulePlanningApi.Services
         {
             try
             {
-                var task = await _context.Tasks.FindAsync(id);
+                var task = await _context.tasks.FindAsync(id);
 
                 if (task == null)
                 {
@@ -99,7 +99,7 @@ namespace SchedulePlanningApi.Services
             try
             {
                 
-                var existingTask = await _context.Tasks.FindAsync(id);
+                var existingTask = await _context.tasks.FindAsync(id);
                 if (existingTask == null)
                 {
                     throw new ApplicationException($"Finding task error id {id}");

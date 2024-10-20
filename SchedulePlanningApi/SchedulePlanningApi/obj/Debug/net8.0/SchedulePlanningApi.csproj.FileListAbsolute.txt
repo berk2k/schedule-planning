@@ -77,3 +77,5 @@ C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi
 C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi\SchedulePlanningApi\obj\Debug\net8.0\SchedulePlanningApi.pdb
 C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi\SchedulePlanningApi\obj\Debug\net8.0\SchedulePlanningApi.genruntimeconfig.cache
 C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi\SchedulePlanningApi\obj\Debug\net8.0\ref\SchedulePlanningApi.dll
+C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi\SchedulePlanningApi\bin\Debug\net8.0\Npgsql.dll
+C:\Users\monster\Desktop\schedule_planning\schedule-planning\SchedulePlanningApi\SchedulePlanningApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

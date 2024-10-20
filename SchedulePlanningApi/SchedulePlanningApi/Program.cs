@@ -14,6 +14,8 @@ Env.Load();
 // Connection string'i .env dosyasýndan alýyoruz
 var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 
+
+
 // Eðer connection string boþsa, hata fýrlatabiliriz
 if (string.IsNullOrEmpty(connectionString))
 {
@@ -24,8 +26,12 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<ITaskService, TaskService>();
 
 // Veritabaný baðlantýsýný kuruyoruz
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//    options.UseSqlServer(connectionString));
+
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

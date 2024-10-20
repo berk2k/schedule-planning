@@ -9,6 +9,6 @@ namespace SchedulePlanningApi.Context
         {
         }
 
-        public DbSet<TaskModel> Tasks { get; set; }
+        public DbSet<TaskModel> tasks { get; set; }
     }
 }
